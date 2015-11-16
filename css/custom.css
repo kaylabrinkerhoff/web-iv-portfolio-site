@@ -1,43 +1,42 @@
 
+/*TYPOGRAPHY*/
+
+h1{
+	font-size:100px;
+	margin-left:70px;
 }
 h2{
-	text-align:center;
-	font-size:100px;
+    margin-bottom:100px;
 }
 
+.about{
+
+    padding-top:200px;
+}
+.contact{
+    padding-bottom: 200px;
+    padding-top:100px;
+}
+
+/*NAV*/
+
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+    /* background: #FFFFFF; */
+    min-width: 100%;
+    padding: 10px;
+    z-index: 50;
+    height:100px;
+}
 
 ul {
     list-style-type: none;
     margin-left: 200px;
-    
     padding: 0;
     overflow: hidden;
-
-    
-     
-}
-
-
-li.logo {
-	width: 5rem;
-	height: 5rem;
-	margin-left:0;
-	margin-top:0px;
-	}
-
-li {
-    float: left;
-     margin-top:30px;
-  
-
-}
-    a:hover{ 
-    	text-decoration: underline;
-}
-
-a {
+ }
+    a {
     display: inline;
-    width: 60px;
+    width: 100%;
     background-color: #fff;
     padding: 150px 150px 150px 0;
     text-decoration:none;
@@ -50,31 +49,64 @@ a {
     text-decoration: none;
 }
 ul.sub-nav{
-	height:100px;
+    height:100%;
+    margin-top:0px;
+    width:100%;
+}
+
+li.logo {
+	width: 5rem;
+	height: 5rem;
+	margin-left:0;
 	margin-top:0px;
-}
-#about{
-	margin-top:200px;
-	margin-bottom:200px;
-}
+	}
+
+li {
+    float: left;
+     margin-top:30px;
+  }
 
 
-[data-magellan-expedition], [data-magellan-expedition-clone] {
-    /* background: #FFFFFF; */
-    min-width: 100%;
-    padding: 10px;
-    z-index: 50;
-    height:100px;
+/*HOVER*/
+
+    a:hover{ 
+        text-decoration: underline;
 }
 
+ figure.tint{
+        max-width:100%;
+        max-height:100%;
+        margin-top:0px;
+        margin-right:0px;
+        margin-bottom:0px;
+        margin-left:0px;
+
+ }
+    .tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin:0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.4;
+    -moz-transition: background .3s linear;
+    -webkit-transition: background .3s linear;
+    -o-transition: background .3s linear;
+    transition: background .3s linear;
+}
+
+.tint:hover:before {
+    background: none;
+}
 
 .footer{
-	background-color:gray;
-	padding: 1.25rem 0;
-	margin-bottom:0;
+    background-color:gray;
+    padding: 1.25rem 0;
+    margin-bottom:0px;
+    text-align:center;
 }
 
-@media only screen and (min-width: 58.75em)
-.below-hero-margin {
-    margin-top: 5.5rem;
-}

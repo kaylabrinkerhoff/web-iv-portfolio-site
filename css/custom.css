@@ -1,12 +1,16 @@
 
 /*TYPOGRAPHY*/
 
+
 h1{
 	font-size:100px;
 	margin-left:70px;
 }
 h2{
+    font-size:30pt;
     margin-bottom:100px;
+    max-width:60%;
+    margin-left:300px;
 }
 
 .about{
@@ -26,11 +30,11 @@ h2{
     padding: 10px;
     z-index: 50;
     height:100px;
+    width:100%;
 }
 
 ul {
     list-style-type: none;
-    margin-left: 200px;
     padding: 0;
     overflow: hidden;
  }
@@ -39,7 +43,6 @@ ul {
     width: 100%;
     background-color: #fff;
     padding: 150px 150px 150px 0;
-    text-decoration:none;
     color:black;
     margin-bottom:100px;
 }
@@ -57,7 +60,7 @@ ul.sub-nav{
 li.logo {
 	width: 5rem;
 	height: 5rem;
-	margin-left:0;
+	margin-left:5rem;
 	margin-top:0px;
 	}
 
@@ -83,7 +86,7 @@ li {
 
  }
     .tint:before {
-    content: "";
+    content: "img";
     display: block;
     position: absolute;
     margin:0px;
@@ -108,5 +111,113 @@ li {
     padding: 1.25rem 0;
     margin-bottom:0px;
     text-align:center;
+    margin-top:100px;
 }
+
+/*CONTACT FORM*/
+.message-box {
+    height: 10rem;
+    width:20rem;
+    margin-left:50px;
+
+}
+input[type=submit] {
+    box-shadow: none;
+    width: 20rem;
+    margin-left:50px;
+
+}
+input[type="text"], [type="email"]{
+    box-shadow: none;
+    height:2rem;
+    width:20rem;
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    margin-left:50px;
+    margin-bottom:1rem;
+}
+.button-style {
+    font-family: 'Raleway', sans-serif;
+    margin-left:2rem;
+}
+::-webkit-input-placeholder {
+ color: #98d2c3;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+ color: #98d2c3;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #98d2c3;
+}
+ input:-ms-input-placeholder, :-ms-input-placeholder {
+ color: #98d2c3;
+}
+.button-style {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+// Small screens
+@media only screen and (max-width: 40em){
+    
+}
+
+
+@media only screen and (max-width: 40em) { 
+    li.logo {
+    width: 1rem;
+    height: 1rem;
+    margin-left:0;
+    margin-top:0px;
+    } 
+
+.message-box {
+    height: 10rem;
+    width:20rem;
+    margin-left:50px;
+
+}
+input[type=submit] {
+    box-shadow: none;
+    width: 20rem;
+    margin-left:50px;
+
+}
+input[type="text"], [type="email"]{
+    box-shadow: none;
+    height:2rem;
+    width:20rem;
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    margin-left:50px;
+    margin-bottom:1rem;
+}
+.button-style {
+    font-family: 'Raleway', sans-serif;
+    margin-left:2rem;
+}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+
 

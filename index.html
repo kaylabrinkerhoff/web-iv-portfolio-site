@@ -21,7 +21,7 @@
     <div class="large-12 column">
       <div class="row">
         <div class="large-6 column">
-          <figure class="tint"><div id="work"><img src="http://placehold.it/720x800" alt="img-1"></div></figure>
+          <a href="url">link text<figure class="tint"><div id="work"><img src="http://placehold.it/720x800" alt="img-1"></div></figure></a>
         </div>
         <div class="large-6 column">
           <div class="row">
@@ -64,15 +64,36 @@
     <div class="large-12 medium-12 columns">
       <figure class="tint"><img src="http://placehold.it/1440x400" alt="img-8"></figure>
     </div>
-  </div>  
- <div class="row">
+  <div class="row">
     <div class="large-12 medium-12 columns">
        <div class="about"><h1 id="about"> about </h1><h2>Welcome! My name is Kayla Brinkerhoff, a Graphic Designer and problem solver living in
    Lincoln, Nebraska. I have always been a creative type and discovering graphic design was the answer to my future. I enjoy creating print, mobile, and web designs within all of what Adobe has to offer.</h2>
       </div>
     </div>
   </div>
+    </div>
+
+<div class="row">
+<div class="large-12 medium-12 columns ">
  <div id="contact"><h1> contact </h1><h2>Do you want to collaborate on some ideas? Send me a message down below!</h2></div>
+</div>
+</div>
+<!-- b. Contact Form -->
+<div class="row">
+    <div class="large-12 column">
+        <form method="post" action="php/contactengine.php">
+      <div class="row">
+        <div class="large-6 column">
+         <input type="text" name="Name" id="Name" placeholder="name:">
+          <input type="email" name="Email" id="Email" placeholder="email:">
+            <textarea name="Message" id="Message" class="message-box" placeholder="message:"></textarea>
+              <div class=".button-style"><input type="submit" name="submit" value="send">
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
     <div class="footer">
       <footer> <small> © kayla brinkerhoff design 2015</small> </footer>
     </div>
@@ -85,6 +106,7 @@
         $(document).foundation();
       </script>
       <script>
+
       $(document).foundation({
   "magellan-expedition": {
     active_class: 'active', // specify the class used for active sections
